@@ -330,26 +330,19 @@ button:hover {
   color: white;
 }
 
-.index-main-container {
-  width: 80%;
-  margin: 0 auto;
-  margin-bottom: 5rem;
-}
-@media (max-width: 800px) {
-  .index-main-container {
-    width: 90%;
-  }
-}
-
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   grid-auto-rows: auto;
   gap: 2.5rem;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 5rem;
 }
 @media (max-width: 800px) {
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    width: 90%;
   }
 }
 

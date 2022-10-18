@@ -17,7 +17,7 @@ body {
   color: $font-color;
 }
 
-header{
+header {
   width: 80%;
   margin: 0 auto;
   padding: 2rem 0 2rem 0;
@@ -42,17 +42,6 @@ button {
   }
 }
 
-// SECCION DE LA PAGINA PRINCIPAL (INDEX)
-
-.index-main-container {
-  width: 80%;
-  margin:  0 auto;
-    margin-bottom: 5rem;
-    @media (max-width: 800px) {
-      width: 90%;
-    }
-}
-
 // CUADRICULA DONDE SE MUESTRAN LOS PRODUCTOS
 
 .grid {
@@ -60,11 +49,15 @@ button {
   grid-template-columns: repeat(auto-fit, (minmax(35rem, 1fr)));
   grid-auto-rows: auto;
   gap: 2.5rem;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+
   @media (max-width: 800px) {
     grid-template-columns: repeat(auto-fit, (minmax(20rem, 1fr)));
+    width: 90%;
   }
 }
-
 
 // ESTILOS DE CADA PRODUCTO DE LA CUADRICULA
 
@@ -81,7 +74,7 @@ button {
     }
   }
 
-  p { 
+  p {
     margin: 0 0 1rem 0;
     color: rgba(90, 90, 90, 0.541);
     font-size: 1.5rem;
